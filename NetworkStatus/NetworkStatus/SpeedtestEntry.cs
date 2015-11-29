@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace NetworkStatus
 {
-    class SpeedtestEntry
+    public class SpeedtestEntry
     {
-        public double DownloadMegabits
+        public double DownloadSpeedMbps
         {
             get;
             set;
          }
-        public SpeedtestEntry()
+        public SpeedtestEntry(double DownloadSpeedMbps)
         {
-
+            this.DownloadSpeedMbps = DownloadSpeedMbps;
         }
     }
 }
